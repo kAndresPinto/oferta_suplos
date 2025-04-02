@@ -19,5 +19,5 @@
 
 ### 1. Clonar el Repositorio  
 ```bash
-git clone https://github.com/tu-usuario/ofertas-suplos.git
+git clone https://github.com/KandresPinto/ofertas-suplos.git
 cd ofertas-suplos
