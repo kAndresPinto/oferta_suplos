@@ -1,0 +1,216 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Filtros */
+.filter-container {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-container input[type="text"],
+.filter-container select {
+    padding: 8px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-container button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-container button:hover {
+    background: #2980b9;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Botones de acción */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-success {
+    background: #2ecc71;
+    color: white;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #27ae60;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+.btn-publicar {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-publicar:hover {
+    background: #d35400;
+}
+
+.btn-publicar:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Tarjetas de procesos */
+.process-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.process-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.process-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: #3498db;
+}
+
+.process-card i {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.process-card span {
+    display: block;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .process-actions {
+        flex-wrap: wrap;
+    }
+    .estado-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.estado-activo {
+    background-color: #3498db;
+    color: white;
+}
+
+.estado-publicado {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.estado-evaluacion {
+    background-color: #e67e22;
+    color: white;
+}
+}
